@@ -3,48 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOSOTROS</title>
+    <title>Nosotros - Café Aroma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Café Aroma</h1>
+
+    <header class="header-principal">
+        <h1 class="titulo-cafe">Café Aroma</h1>
     </header>
 
-    <nav>
-        <ul>
+    <nav class="navegacion">
+        <ul class="menu">
             <li><a href="index.html">INICIO</a></li>
-            <li><a href="menu.html">MENU</a></li>
-            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="menu.html">MENÚ</a></li>
+            <li><a href="nosotros.html" class="active">NOSOTROS</a></li>
             <li><a href="contacto.html">CONTACTO</a></li>
         </ul>
     </nav>
 
-    <main>
+    <main class="contenido-principal">
 
-        <section>
-            <h2>Nosotros</h2>
-            <img src="img/interior de cafe.jpg" alt="Interior de Café Aroma" height="300" width="400">
-            <h3>Nuestra Historia</h3>
-            <p>Café Aroma nació en el corazón de Lima en 2025, inspirado por el amor a los dulces peruanos y la calidez de las mañanas con café. Fundado por una familia limeña, nuestro sueño fue combinar postres tradicionales como la mazamorra morada y el turrón de Doña Pepa con clásicos internacionales como el tiramisú, creando un espacio donde los sabores del Perú y el mundo se encuentran en cada bocado y sorbo.</p>
-            <h3>Nuestra Misión</h3>
-            <p>Ofrecer momentos de felicidad a través de postres artesanales, desayunos reconfortantes y bebidas calientes que celebran la riqueza de la gastronomía peruana y global, en un ambiente acogedor.</p>
-            <h3>Nuestros Valores</h3>
-            <ul>
-                <li><strong>Tradición</strong>: Rescatamos recetas peruanas como la mazamorra morada y las combinamos con postres internacionales.</li>
-                <li><strong>Calidad</strong>: Usamos ingredientes frescos, desde maíz morado de los Andes hasta café de Chanchamayo.</li>
-                <li><strong>Comunidad</strong>: Creamos un espacio para compartir desayunos, meriendas y momentos especiales.</li>
-            </ul>
-            <h3>¡Visítanos!</h3>
-            <p>Ven a Café Aroma y descubre el sabor de Lima en cada tamal criollo, café peruano o pay de manzana. Síguenos en <a href="https://instagram.com">Instagram</a> y <a href="https://facebook.com">Facebook</a> para conocer nuestras novedades.</p>
+        <!-- Bienvenida -->
+        <section class="hero-nosotros">
+            <img src="img/interior de cafe.jpg" alt="Interior de Café Aroma" class="imagen-hero">
+            <div class="texto-hero">
+                <h2>¡Bienvenidos a nuestra casa!</h2>
+                <p>Un rinconcito cálido en el corazón de la ciudad desde 2018</p>
+            </div>
+        </section>
+
+        <!-- Nuestra historia -->
+        <section class="seccion-texto">
+            <h2 class="titulo-seccion">Nuestra historia</h2>
+            <p class="parrafo-grande">
+                Café Aroma nació de un sueño familiar: traer los sabores de la abuela a la mesa de todos. 
+                Empezamos en un local pequeñito en Miraflores con solo 4 mesas y hoy seguimos haciendo 
+                todo casero, con las mismas recetas de siempre y el mismo cariño de siempre.
+            </p>
+            <p class="parrafo-grande">
+                Aquí no solo vienes a tomar un café… vienes a sentirte en casa.
+            </p>
+        </section>
+
+        <!-- Valores -->
+        <section class="seccion-valores">
+            <h2 class="titulo-seccion">Lo que nos hace especiales</h2>
+            <div class="grid-valores">
+
+                <div class="caja-valor">
+                    <i class="fas fa-heart icono-valor"></i>
+                    <h3>Hecho con amor</h3>
+                    <p>Todos nuestros postres y bebidas se preparan el mismo día, como en casa.</p>
+                </div>
+
+                <div class="caja-valor">
+                    <i class="fas fa-leaf icono-valor"></i>
+                    <h3>Ingredientes peruanos</h3>
+                    <p>Apoyamos a productores locales: café de Villa Rica, chancaca de Cañete, manjar de Lurín.</p>
+                </div>
+
+                <div class="caja-valor">
+                    <i class="fas fa-users icono-valor"></i>
+                    <h3>Siempre familia</h3>
+                    <p>El 90% de nuestro equipo lleva más de 3 años con nosotros. Aquí todos somos familia.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- El equipo -->
+        <section class="seccion-equipo">
+            <h2 class="titulo-seccion">Nuestro equipo</h2>
+            <div class="grid-equipo">
+
+                <figure class="card-equipo">
+                    <img src="img/maria.avif" alt="María" class="foto-equipo">
+                    <figcaption><strong>María</strong><br>La reina de la mazamorra</figcaption>
+                </figure>
+
+                <figure class="card-equipo">
+                    <img src="img/anthony.avif" alt="Anthony" class="foto-equipo">
+                    <figcaption><strong>Anthony</strong><br>Barista y chistoso oficial</figcaption>
+                </figure>
+
+                <figure class="card-equipo">
+                    <img src="img/luisa.webp" alt="Luisa" class="foto-equipo">
+                    <figcaption><strong>Luisa</strong><br>Encargada de que siempre sonrías</figcaption>
+                </figure>
+
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; Café Aroma. Todos los derechos reservados.</p>
-        <a href="https://instagram.com">Instagram</a>
-        <a href="https://facebook.com">Facebook</a>
-        <a href="contacto.html">CONTACTO</a>
+<footer class="pie-pagina">
+        <p>&copy; 2025 Café Aroma. Todos los derechos reservados.</p>
+
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com" target="_blank" class="icono-red" title="Síguenos en Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="icono-red" title="Síguenos en Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/51987654321" target="_blank" class="icono-red" title="Escríbenos por WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <p><a href="contacto.html" class="enlace-contacto">Contacto</a></p>
     </footer>
+
 </body>
 </html>

@@ -3,56 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACTO</title>
+    <title>Contacto - Café Aroma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Café Aroma</h1>
+
+    <header class="header-principal">
+        <h1 class="titulo-cafe">Café Aroma</h1>
     </header>
 
-    <nav>
-        <ul>
+    <nav class="navegacion">
+        <ul class="menu">
             <li><a href="index.html">INICIO</a></li>
-            <li><a href="menu.html">MENU</a></li>
+            <li><a href="menu.html">MENÚ</a></li>
             <li><a href="nosotros.html">NOSOTROS</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="contacto.html" class="active">CONTACTO</a></li>
         </ul>
     </nav>
 
-    <main>
+    <main class="contenido-principal">
 
-        <section>
-            <h2>Contáctanos</h2>
-            <p>¡En Café Aroma queremos estar cerca de ti! Escríbenos para reservas, consultas o para compartir tu amor por nuestros postres peruanos y desayunos. ¡Te esperamos con un café peruano bien caliente!</p>
-            <img src="img/teesperamos.png" alt="Te esperamos" height="300" width="500">
-            <h3>Formulario de Contacto</h3>
-            <form>
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" required><br>
-                <label for="correo">Correo electrónico:</label><br>
-                <input type="email" id="correo" name="correo" required><br>
-                <label for="telefono">Teléfono (opcional):</label><br>
-                <input type="tel" id="telefono" name="telefono"><br>
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br>
-                <button type="submit">Enviar</button>
-            </form>
-            <h3>Información de Contacto</h3>
-            <p><strong>Dirección:</strong> Av. Aroma 123, Miraflores, Lima, Perú</p>
-            <p><strong>Teléfono:</strong> +51 987 654 321</p>
-            <p><strong>Correo:</strong> <a href="mailto:contacto@cafearoma.pe">contacto@cafearoma.pe</a></p>
-            <p><strong>Horario:</strong> Lunes a viernes: 8:00 AM - 8:00 PM | Sábados y domingos: 9:00 AM - 10:00 PM</p>
-            <h3>Síguenos</h3>
-            <p>Síguenos en <a href="https://instagram.com/cafe_aroma">Instagram</a> y <a href="https://facebook.com/cafe_aroma">Facebook</a> para novedades y promociones.</p>
+        <section class="seccion-contacto">
+            <h2 class="titulo-seccion">¡Te esperamos con los brazos abiertos!</h2>
+            <p class="parrafo-grande">Reservas, consultas o solo para decirnos que te encantó el arroz con leche. ¡Aquí estamos!</p>
+
+            <div class="grid-contacto">
+
+                <!-- Formulario -->
+                <div class="formulario-contacto">
+                    <h3>Escríbenos</h3>
+                    <form>
+                        <input type="text" placeholder="Tu nombre" required>
+                        <input type="email" placeholder="Tu correo" required>
+                        <input type="tel" placeholder="Teléfono (opcional)">
+                        <textarea rows="5" placeholder="Tu mensaje..." required></textarea>
+                        <button type="submit" class="btn btn-enviar w-100">Enviar mensaje</button>
+                    </form>
+                </div>
+
+                <!-- Información y Mapa -->
+                <div class="info-contacto">
+                    <h3>Encuéntranos</h3>
+                    
+                    <p><i class="fas fa-map-marker-alt icono-info"></i> <strong>Dirección:</strong><br>
+                       Av. Aroma 123, Miraflores, Lima</p>
+                    
+                    <p><i class="fas fa-phone icono-info"></i> <strong>Teléfono / WhatsApp:</strong><br>
+                       <a href="https://wa.me/51987654321">+51 987 654 321</a></p>
+                    
+                    <p><i class="fas fa-envelope icono-info"></i> <strong>Correo:</strong><br>
+                       <a href="mailto:contacto@cafearoma.pe">contacto@cafearoma.pe</a></p>
+                    
+                    <p><i class="fas fa-clock icono-info"></i> <strong>Horario:</strong><br>
+                       Lun-Vie: 8:00 AM - 8:00 PM<br>
+                       Sáb-Dom: 9:00 AM - 10:00 PM</p>
+
+                    <!-- Mapa de Google -->
+                    <div class="mapa">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.795!2d-77.030549!3d-12.112345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9d379a9b3d5%3A0x1a47c1b7d1c8e8f3!2sMiraflores%2C%20Lima!5e0!3m2!1ses!2spe!4v1698000000000" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius:12px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <div class="redes-contacto">
+                        <a href="https://instagram.com" target="_blank" class="icono-red-grande"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="icono-red-grande"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/51987654321" target="_blank" class="icono-red-grande"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; Café Aroma. Todos los derechos reservados.</p>
-        <a href="https://instagram.com">Instagram</a>
-        <a href="https://facebook.com">Facebook</a>
-        <a href="contacto.html">CONTACTO</a>
+<footer class="pie-pagina">
+        <p>&copy; 2025 Café Aroma. Todos los derechos reservados.</p>
+
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com" target="_blank" class="icono-red" title="Síguenos en Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="icono-red" title="Síguenos en Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/51987654321" target="_blank" class="icono-red" title="Escríbenos por WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <p><a href="contacto.html" class="enlace-contacto">Contacto</a></p>
     </footer>
+
 </body>
 </html>

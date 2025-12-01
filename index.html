@@ -3,74 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INICIO</title>
+    <title>Café Aroma - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Café Aroma</h1>
+
+    <header class="header-principal">
+        <h1 class="titulo-cafe">Café Aroma</h1>
     </header>
 
-    <nav>
-        <ul>
+    <nav class="navegacion">
+        <ul class="menu">
             <li><a href="index.html">INICIO</a></li>
-            <li><a href="menu.html">MENU</a></li>
+            <li><a href="menu.html">MENÚ</a></li>
             <li><a href="nosotros.html">NOSOTROS</a></li>
             <li><a href="contacto.html">CONTACTO</a></li>
         </ul>
     </nav>
 
-    <main>
-        <section>
-            <h2>Nuevos productos</h2>
+    <main class="contenido-principal">
 
-            <h3>Picarones</h3>
-            <img src="img/picarones.jpg" alt="picarones" height="200" width="320">
-            <p>s/.9.00</p>
+        <!-- Nuevos productos -->
+        <section class="seccion-nuevos">
+            <h2 class="titulo-seccion">Nuevos productos</h2>
+            <div class="grid-productos">
 
-            <h3>Tiramisú</h3>
-            <img src="img/Tiramisú.webp" alt="Tiramisú" height="200" width="320">
-            <p>s/.14.00</p>
+                <article class="card-producto">
+                    <h3 class="nombre-producto">Picarones</h3>
+                    <img src="img/picarones.jpg" alt="Picarones" class="imagen-producto">
+                    <p class="precio">s/.9.00</p>
+                    <button class="btn-carrito">Añadir al carrito</button>
+                </article>
 
-            <h3>Panna Cotta</h3>
-            <img src="img/Panna Cotta.webp" alt="Panna Cotta" height="200" width="320">
-            <p>s/.12.00</p>
+                <article class="card-producto">
+                    <h3 class="nombre-producto">Tiramisú</h3>
+                    <img src="img/Tiramisú.webp" alt="Tiramisú" class="imagen-producto">
+                    <p class="precio">s/.14.00</p>
+                    <button class="btn-carrito">Añadir al carrito</button>
+                </article>
+
+                <article class="card-producto">
+                    <h3 class="nombre-producto">Panna Cotta</h3>
+                    <img src="img/Panna Cotta.webp" alt="Panna Cotta" class="imagen-producto">
+                    <p class="precio">s/.12.00</p>
+                    <button class="btn-carrito">Añadir al carrito</button>
+                </article>
+
+            </div>
         </section>
 
-        <section>
-            <h2>Productos más vendidos</h2>
+        <!-- Más vendidos -->
+        <section class="seccion-vendidos">
+            <h2 class="titulo-seccion">Productos más vendidos</h2>
+            <div class="grid-productos">
 
-            <h3>Mazamorra morada</h3>
-            <img src="img/Mazamorra morada.webp" alt="Mazamorra Morada" height="200" width="320">
-            <p>s/.8.00</p>
+                <article class="card-producto">
+                    <h3 class="nombre-producto">Mazamorra morada</h3>
+                    <img src="img/Mazamorra morada.webp" alt="Mazamorra morada" class="imagen-producto">
+                    <p class="precio">s/.8.00</p>
+                    <button class="btn-carrito">Añadir al carrito</button>
+                </article>
 
-            <h3>El arroz con leche</h3>
-            <img src="img/el arroz con leche.webp" alt="El arroz con leche" height="200" width="320">
-            <p>s/.7.00</p>
+                <article class="card-producto">
+                    <h3 class="nombre-producto">Arroz con leche</h3>
+                    <img src="img/el arroz con leche.webp" alt="Arroz con leche" class="imagen-producto">
+                    <p class="precio">s/.7.00</p>
+                    <button class="btn-carrito">Añadir al carrito</button>
+                </article>
 
-            <h3>El turrón de doña pepa</h3>
-            <img src="img/el turrón de doña pepa.jpg" alt="el turrón de doña pepa" height="200" width="320">
-            <p>s/.10.00</p>
-        </section>    
+                <article class="card-producto">
+                    <h3 class="nombre-producto">Turrón de Doña Pepa</h3>
+                    <img src="img/el turrón de doña pepa.jpg" alt="Turrón de Doña Pepa" class="imagen-producto">
+                    <p class="precio">s/.10.00</p>
+                    <button class="btn-carrito">Añadir al carrito</button>
+                </article>
 
-        <section>
-            <h2>Calificaciones</h2>
-            <article>
-                <h3>Romeo ★★★★★ (5/5)</h3>
-                <p>"La mazamorra morada es increíble, con el toque justo de canela. El ambiente es súper acogedor. ¡Volveré por más!"</p>
-            </article>
-            <article>
-                <h3>Julieta ★★★★☆ (4/5)</h3>
-                <p>"El arroz con leche está delicioso, muy cremoso. Los picarones podrían ser más crujientes, pero el sabor es bueno."</p>
-            </article>
+            </div>
+        </section>
+
+        <!-- Reseñas -->
+        <section class="seccion-reseñas">
+            <h2 class="titulo-seccion">Lo que dicen nuestros clientes</h2>
+            <div class="grid-reseñas">
+
+                <article class="card-reseña">
+                    <h3 class="nombre-cliente">Romeo ★★★★★</h3>
+                    <p>"La mazamorra morada es increíble, con el toque justo de canela. ¡El mejor postre de Lima!"</p>
+                </article>
+
+                <article class="card-reseña">
+                    <h3 class="nombre-cliente">Julieta ★★★★☆</h3>
+                    <p>"El arroz con leche está delicioso, muy cremoso. Los picarones podrían ser más crujientes, pero igual rico."</p>
+                </article>
+
+                <article class="card-reseña">
+                    <h3 class="nombre-cliente">Carlos ★★★★★</h3>
+                    <p>"El turrón de Doña Pepa es una explosión de sabor, me transporta a octubre. ¡Recomendado 100%!"</p>
+                </article>
+
+                <article class="card-reseña">
+                    <h3 class="nombre-cliente">María ★★★★★</h3>
+                    <p>"El tiramisú es de otro nivel, súper suave y con el café justo. Volveré solo por él."</p>
+                </article>
+
+                <article class="card-reseña">
+                    <h3 class="nombre-cliente">Pedro ★★★★☆</h3>
+                    <p>"Todo muy rico y el lugar está lindo. Solo que a veces tardan un poquito en atender."</p>
+                </article>
+
+                <article class="card-reseña">
+                    <h3 class="nombre-cliente">Ana ★★★★★</h3>
+                    <p>"La panna cotta con frutos rojos es mi nueva adicción. ¡Por favor nunca la quiten del menú!"</p>
+                </article>
+
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; Café Aroma. Todos los derechos reservados.</p>
-        <a href="https://instagram.com">Instagram</a>
-        <a href="https://facebook.com">Facebook</a>
-        <a href="contacto.html">CONTACTO</a>
+    <footer class="pie-pagina">
+        <p>&copy; 2025 Café Aroma. Todos los derechos reservados.</p>
+
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com" target="_blank" class="icono-red" title="Síguenos en Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="icono-red" title="Síguenos en Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/51987654321" target="_blank" class="icono-red" title="Escríbenos por WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <p><a href="contacto.html" class="enlace-contacto">Contacto</a></p>
     </footer>
+
 </body>
 </html>

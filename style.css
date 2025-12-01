@@ -1,0 +1,337 @@
+/* ====================================
+   1. GLOBAL
+   ==================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fdf8f3;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ====================================
+   2. CONTENEDOR PRINC
+   ==================================== */
+.contenido-principal {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #6b4e31;
+}
+
+/* ====================================
+   3. HEADER
+   ==================================== */
+.header-principal {
+    background-color: #6b4e31;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.titulo-cafe {
+    font-size: 2.5em;
+}
+
+/* ====================================
+   4. MENÚ DE NAVEGACIÓN
+   ==================================== */
+.navegacion {
+    background-color: #8b6f47;
+    text-align: center;
+}
+
+.menu {
+    all: unset;
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    width: 100%;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.menu li a:hover {
+    background-color: #6b4e31;
+}
+
+.menu li a.active {
+    background-color: #6b4e31;
+    font-weight: bold;
+}
+
+/* ====================================
+   5. GRIDS DE PRODUCTOS Y RESEÑAS
+   ==================================== */
+.grid-productos,
+.grid-reseñas {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr;
+}
+
+.card-producto,
+.card-reseña {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.imagen-producto {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.nombre-producto {
+    font-size: 1.4em;
+    margin: 10px 0;
+    color: #6b4e31;
+}
+
+.precio {
+    font-size: 1.6em;
+    color: #c41e3a;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-carrito {
+    background-color: #d4a373;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-carrito:hover {
+    background-color: #c41e3a;
+}
+
+/* ====================================
+   6. FOOTER
+   ==================================== */
+.pie-pagina {
+    background-color: #4a3728;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.redes-sociales {
+    margin: 20px 0;
+}
+
+.icono-red {
+    color: white;
+    font-size: 2.2em;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.icono-red:hover {
+    opacity: 0.7;
+}
+
+.enlace-contacto {
+    color: #d4a373;
+    text-decoration: none;
+}
+
+/* ====================================
+   7. PÁGINAS ESPECÍFICAS
+   ==================================== */
+
+/* PÁGINA NOSOTROS */
+.hero-nosotros {
+    position: relative;
+    margin-bottom: 40px;
+}
+.imagen-hero {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.texto-hero {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(107, 78, 49, 0.8);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+.texto-hero h2 { font-size: 2.2em; margin-bottom: 5px; }
+
+.parrafo-grande {
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.grid-valores, .grid-equipo {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr;
+}
+
+.caja-valor {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.icono-valor {
+    font-size: 3em;
+    color: #d4a373;
+    margin-bottom: 15px;
+}
+
+.card-equipo img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.card-equipo {
+    text-align: center;
+}
+.card-equipo figcaption {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+/* PÁGINA CONTACTO */
+.grid-contacto {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+}
+
+.formulario-contacto, .info-contacto {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.formulario-contacto h3, .info-contacto h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6b4e31;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #d4a373;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.btn-enviar {
+    background-color: #d4a373;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 100%;
+}
+.btn-enviar:hover { background-color: #c41e3a; }
+
+.icono-info {
+    color: #d4a373;
+    margin-right: 10px;
+    width: 20px;
+}
+.info-contacto p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.mapa {
+    margin: 25px 0;
+}
+
+.redes-contacto {
+    text-align: center;
+    margin-top: 20px;
+}
+.icono-red-grande {
+    font-size: 2.5em;
+    margin: 0 15px;
+    color: #6b4e31;
+}
+
+/* ====================================
+   8. RESPONSIVE
+   ==================================== */
+@media (min-width: 600px) {
+    .menu li {
+        width: auto;
+    }
+    
+    .grid-productos,
+    .grid-reseñas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 700px) {
+    .grid-valores, .grid-equipo { 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (min-width: 800px) {
+    .grid-contacto { 
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (min-width: 900px) {
+    .grid-productos,
+    .grid-reseñas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .titulo-cafe {
+        font-size: 3.5em;
+    }
+}
